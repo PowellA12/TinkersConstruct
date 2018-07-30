@@ -12,6 +12,7 @@ import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraft.world.gen.IChunkGenerator;
 import net.minecraft.world.gen.structure.StructureBoundingBox;
 import net.minecraftforge.fml.common.IWorldGenerator;
+// import i have no idea what to put here to inport the almura trees
 
 import java.awt.geom.Ellipse2D;
 import java.util.Optional;
@@ -204,6 +205,8 @@ public class SlimeIslandGenerator implements IWorldGenerator {
     else if(rnr < 6) {
       dirt = BlockSlimeDirt.DirtType.GREEN;
       lakeGen = lakeGenGreen;
+      
+    // treeGen = Someting.Almura; set this to make the almura tree spawn
     }
 
     IBlockState dirtState = TinkerWorld.slimeDirt.getDefaultState().withProperty(BlockSlimeDirt.TYPE, dirt);
